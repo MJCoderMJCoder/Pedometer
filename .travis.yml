@@ -1,0 +1,18 @@
+language: android
+
+jdk:
+    - oraclejdk8
+
+android:
+  components:
+    - tools
+    - build-tools-25.0.2
+    - platform-tools
+    - android-25
+
+licenses:
+    - 'android-sdk-license-.+'
+    - '.+'
+
+script:
+  - ./gradlew assembleFdroidRelease
